@@ -1,0 +1,21 @@
+menu "Config Library"
+
+    config USE_I2C_UTILS
+        bool "Enable I2C UTILS"
+        default y
+        help
+            Enable I2C Utilities.
+
+    config USE_BH1750
+        bool "Enable BH1750"
+        default y
+        help
+            Enable BH1750 light sensor driver.
+
+    config USE_BH1750
+        bool "Enable SHT31"
+        default y
+        help
+            Enable SHT31 temperature & humidity sensor driver.
+
+endmenu
