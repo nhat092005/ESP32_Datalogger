@@ -36,6 +36,7 @@ typedef struct {
  * @brief Initialize I2C scanner
  * 
  * @param config Pointer to I2C scanner configuration
+ * 
  * @return ESP_OK on success, error code otherwise
  */
 esp_err_t i2c_scanner_init(const i2c_scanner_config_t *config);
@@ -44,6 +45,7 @@ esp_err_t i2c_scanner_init(const i2c_scanner_config_t *config);
  * @brief Deinitialize I2C scanner
  * 
  * @param port I2C port number
+ * 
  * @return ESP_OK on success, error code otherwise
  */
 esp_err_t i2c_scanner_deinit(i2c_port_t port);
@@ -54,6 +56,7 @@ esp_err_t i2c_scanner_deinit(i2c_port_t port);
  * @param port I2C port number
  * @param found_devices Array to store found device addresses (optional, can be NULL)
  * @param max_devices Maximum number of devices to store in found_devices array
+ * 
  * @return Number of devices found, or negative error code
  */
 int i2c_scanner_scan(i2c_port_t port, uint8_t *found_devices, size_t max_devices);
@@ -63,6 +66,7 @@ int i2c_scanner_scan(i2c_port_t port, uint8_t *found_devices, size_t max_devices
  * 
  * @param port I2C port number
  * @param address Device address (7-bit)
+ * 
  * @return true if device exists, false otherwise
  */
 bool i2c_scanner_device_exists(i2c_port_t port, uint8_t address);
