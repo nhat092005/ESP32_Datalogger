@@ -1,3 +1,8 @@
+/**
+ * @file i2c_utils.c
+ * @brief I2C Utilities Implementation
+ */
+
 #include "i2c_utils.h"
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"

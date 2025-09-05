@@ -1,3 +1,8 @@
+/**
+ * @file i2c_utils.h
+ * @brief I2C Utilities 
+ */
+
 #ifndef I2C_UTILS_H
 #define I2C_UTILS_H
 
@@ -82,4 +87,4 @@ void i2c_scanner_print_results(i2c_port_t port);
 }
 #endif
 
-#endif // I2C_UTILS_H
+#endif /* I2C_UTILS_H */ 
